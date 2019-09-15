@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pinterest Clone</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="pageIcon" rel="shortcut icon" href="https://cdn.glitch.com/09cb0c61-f5b5-4e27-b8db-32d01f3107fc%2FXXX_icon-icons.com_61683.ico?v=1568122516515" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./public/style.css">
+  </head>
+  <body>
+    <div id="wrapperOne">
+      <form action="/" method="get">
+        <input id="title" type="submit" value="Pinterest Clone" class="submit">
+      </form>
+      <div id="upout">
+        <form action="/upload" method="post" id="upload">
+          <input type="submit" value="Upload" class="submit">
+        </form>
+        <form action="/mywall" method="post" id="mywall">
+          <input type="submit" value="My wall" class="submit">
+        </form>
+        <form action="/logout" method="post" id="logout">
+          <input type="submit" value="Log out" class="submit">
+        </form>
+      </div>
+    </div>
+    <div id="wrapperThree" >
+      <%=images%>
+    </div>
+  </body>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var a = document.getElementById('wrapperThree').innerHTML.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+        document.getElementById('wrapperThree').innerHTML = a;
+        var masonry = new Masonry(document.getElementById('wrapperThree'), {
+          itemSelector: '.image',
+          columnWidth: 200
+        });
+      });    </script>
+</html>
+

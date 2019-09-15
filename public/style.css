@@ -1,0 +1,126 @@
+html {
+  background-color: hsl(0,0%,10%);
+  font-family: arial;
+  align-text: center;
+}
+
+#wrapperOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0,0%,10%);
+  color: hsl(0,0%,90%);
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+#upout {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+#wrapperTwo {
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  width: 250px;
+}
+
+input {
+  margin-top: 5px;
+  color: hsl(0,0%,90%);
+  background-color: hsl(0,0%,10%);
+  font-size: 25px;
+  border: 3px solid hsl(0,0%,90%);
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit {
+  margin-top: 10px;
+  color: hsl(0,0%,90%);
+  background-color: hsl(0,0%,10%);
+  font-size: 25px;
+  border: 3px solid hsl(0,0%,90%);
+  border-radius: 5px;
+  width: 100px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background-color: hsl(0,0%,10%);
+  padding-bottom: 10px;
+}
+
+.imageBorder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 192px;
+  background-color: hsl(0,0%,90%);
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+img {
+  display: block;
+  width: 184px;
+  margin: auto;
+}
+
+img:after {
+  background-image: url('https://cdn.glitch.com/09cb0c61-f5b5-4e27-b8db-32d01f3107fc%2Fthumbnails%2F272841594007211.jpg?1568547334600');
+  background-size: contain;
+  z-index: 2;
+  content: "";
+  display: block;
+  position: relative;
+  width: 184px;
+  height: 143px;
+}
+
+.users {
+  display: inline-block;
+  margin-left: 6px;
+  color: hsl(0,0%,10%);
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+#title {
+  font-size: 50px;
+  color: hsl(0,0%,90%);
+  background-color: hsl(0,0%,10%);
+  font-size: 40px;
+  border: 3px solid hsl(0,0%,10%);
+  border-radius: 5px;
+  width: 300px;
+}
+
+.deleteForm {
+  display: inline-block;
+}
+
+.delete {
+  display: inline-block;
+  font-size: 30px;
+  color: hsl(0,20%,50%);
+  background-color: hsl(0,0%,90%);
+  border: 3px solid hsl(0,0%,90%);
+  border-radius: 5px;
+  width: 45px;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
